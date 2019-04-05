@@ -45,11 +45,12 @@
 
 此处标明接口输出参数类型和描述
 
- 序号         |  变量名称	     | 类型	       | 描述
+ 序号         |  变量名称	     | 类型	         | 描述
 :----------- | :-----------: | -----------: | -----------:
-        1	 |space	         | String	    | domain 的名称
-2	         | userId        | Integer      | 用户ID
-3	         | name	         | String	    | 查询的名称
+1	           |   space	     | String	      | domain 的名称
+2	           |   userId      | Integer      | 用户ID
+3	           |   name	       | String	      | 查询的名称
+
 接口请求地址
 
 http://192.168.1.26/company/search/
