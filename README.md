@@ -12,7 +12,7 @@
   ```
   
   ## - Run it 
-  -使用初始化好的密码可用:
+  - 使用初始化好的密码可用:
   ```python
       fabmanager run
   ```
@@ -20,7 +20,7 @@
   账号:yangdd
   密码:11111111
   
-  -重新创建管理员可用(在当前目录下使用命令行):
+  - 重新创建管理员可用(在当前目录下使用命令行):
   ```python
       fabmanager create-admin      
   ```
@@ -30,9 +30,9 @@
   
   ## - Read it
   
-  -同目录下有doc文档,对自带的api,jinjia引擎有大概的介绍,详细的文档移步[flask-appbuilder](https://flask-appbuilder.readthedocs.io/en/latest/intro.html)
+  - 同目录下有doc文档,对自带的api,jinjia引擎有大概的介绍,详细的文档移步[flask-appbuilder](https://flask-appbuilder.readthedocs.io/en/latest/intro.html)
   
-  -张小羽多负责前端api得书写(记得要熟悉fkask,还有jinjia),常小乐负责具体视图层的业务,主要为图表,张小然负责前端整体的UI布局.请前端的小朋友给张小羽书写所需的完整的api文档(不用过于复杂,描述清楚需要后端西游提供什么即可),可参考如下:
+  - 张小羽多负责前端api得书写(记得要熟悉fkask,还有jinjia),常小乐负责具体视图层的业务,主要为图表,张小然负责前端整体的UI布局.请前端的小朋友给张小羽书写所需的完整的api文档(不用过于复杂,描述清楚需要后端西游提供什么即可),可参考如下:
   
 -------------------------------------------------------------------
 接口名称 （这个接口是干什么用的）
@@ -57,9 +57,9 @@ http://192.168.1.26/company/search/
 
 接口请求 方式 GET/POST/DELETE/PUT/
 
-##响应数据
+响应数据
 
-###成功时返回数据
+成功时返回数据
 
 {
      success:true,
@@ -68,7 +68,7 @@ http://192.168.1.26/company/search/
         data:[]
      }
 }
-###失败时返回数据
+失败时返回数据
 
 {
     success:false,
@@ -79,6 +79,7 @@ http://192.168.1.26/company/search/
 }
 ____________________________________________________________________________
 ## Look it
+
 我选了几个不错的开源web软件,可以供张小然,常小乐参考
 
 图表类:
