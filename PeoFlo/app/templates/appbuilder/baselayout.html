@@ -2,12 +2,15 @@
 {% import 'appbuilder/baselib.html' as baselib %}
 
 {% block body %}
-        {% include 'appbuilder/general/confirm.html' %}
-        {% include 'appbuilder/general/alert.html' %}
+{#顶部标签栏#}
+    {% include 'appbuilder/general/confirm.html' %}
+    {% include 'appbuilder/general/alert.html' %}
 
     {% block navbar %}
+{#中间部分#}
         <header class="top" role="header">
         {% include 'appbuilder/navbar.html' %}
+
         </header>
     {% endblock %}
 
@@ -20,7 +23,7 @@
           {% endblock %}
       </div>
     </div>
-
+{#页脚#}
     {% block footer %}
         <footer>
         <div class="img-rounded nav-fixed-bottom">

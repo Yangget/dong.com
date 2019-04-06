@@ -65,9 +65,7 @@ class MyView(BaseView):
     @expose('/method1/')
     @has_access
     def method1(self):
-            # do something with param1
-            # and return to previous page or index
-        return 'Hello'
+        return render_template("appbuilder/layout.html")
 
     @expose('/method2/<string:param1>')
     @has_access

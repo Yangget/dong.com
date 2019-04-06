@@ -59,7 +59,7 @@ APP_NAME = "People Flow Count"
 # APP_THEME = "journal.css"
 
 # 白色背景，黑色字体
-# APP_THEME = "readable.css"
+APP_THEME = "readable.css"
 # APP_THEME = "simplex.css"
 # APP_THEME = "slate.css"
 
