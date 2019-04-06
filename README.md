@@ -7,7 +7,7 @@
       git clone https://github.com/Yangget/dong.com.git
       # 进入项目目录
       cd dong.com/PeoFlow
-      # 安装依赖(建议创建虚拟环境,可以[参考](https://flask-appbuilder.readthedocs.io/en/latest/installation.html],不创建虚拟环境影响不大)
+      # 安装依赖(建议创建虚拟环境,可以[参考](https://flask-appbuilder.readthedocs.io/en/latest/installation.html),不创建虚拟环境影响不大)
       pip install requirements.txt
   ```
   
