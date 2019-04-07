@@ -2,28 +2,28 @@
   ------------------------------------------------------------------------
   ## - Install it:
   
-  ```python
+  ```shell
       # 克隆该项目
       git clone https://github.com/Yangget/dong.com.git
       # 进入项目目录
       cd dong.com/PeoFlow
-      # 安装依赖(建议创建虚拟环境,可以[参考](https://flask-appbuilder.readthedocs.io/en/latest/installation.html),不创建虚拟环境影响不大)
+      # 安装依赖(建议创建虚拟环境,可以[参考](https://flask-appbuilder.readthedocs.io/en/latest/installation.html],不创建虚拟环境影响不大)
       pip install requirements.txt
   ```
   
   ## - Run it 
   - 使用初始化好的密码可用:
-  ```python
+  ```shell
       fabmanager run
   ```
   然后在浏览器查看http://0.0.0.0:8080/
   
-  账号:yangdd
+  账号:见群图片
 
   密码:11111111
   
   - 重新创建管理员可用(在当前目录下使用命令行):
-  ```python
+  ```shell
       fabmanager create-admin      
   ```
   按照提示输入,录入Sql库中,接下来同上操作
@@ -128,3 +128,22 @@ ____________________________________________________________________________
 ## Insist it
 
 精彩还未开始......
+
+____________________________________________________________________________
+
+## 环境搭建(Linux)
+
+```shell
+    # 安装沙盒
+    sudo apt-get install python-virtualenv
+    # 创建一个virtualenv
+    virtualenv venv 
+    # 链接本地python解释器
+    virtualenv -p /usr/bin/python3.6 venv
+    # 激活沙盒
+    source venv/bin/activate
+    # 安装依赖
+    pip install flask-appbuilder
+    # 退出环境(结束时)
+    deactivate
+```
