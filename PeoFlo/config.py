@@ -12,8 +12,8 @@ OPENID_PROVIDERS = [
     {'name': 'Flickr', 'url': 'http://www.flickr.com/<username>'},
     {'name': 'MyOpenID', 'url': 'https://www.myopenid.com'}]
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-#SQLALCHEMY_DATABASE_URI = 'mysql://username:password@mysqlserver.local/quickhowto'
+# SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://prople:prople@222.27.227.131:3306/people_count'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://scott:tiger@localhost:5432/myapp'
 #SQLALCHEMY_ECHO = True
 SQLALCHEMY_POOL_RECYCLE = 3
@@ -38,15 +38,19 @@ LANGUAGES = {
 #------------------------------
 # GLOBALS FOR GENERAL APP's
 #------------------------------
-UPLOAD_FOLDER = basedir + '/app/static/uploads/'
-IMG_UPLOAD_FOLDER = basedir + '/app/static/uploads/'
-IMG_UPLOAD_URL = '/static/uploads/'
+UPLOAD_FOLDER = basedir + '/app/static/'
+IMG_UPLOAD_FOLDER = basedir + '/app/static/'
+IMG_UPLOAD_URL = '/static/'
 AUTH_TYPE = 1
 #AUTH_LDAP_SERVER = "ldap://dc.domain.net"
 AUTH_ROLE_ADMIN = 'Admin'
 AUTH_ROLE_PUBLIC = 'Public'
 APP_NAME = "People Flow Count"
 
+# SQLALCHEMY_BINDS = {
+# #     # 'my_sql1':'mysql://root:password@localhost/quickhowto',
+#     'my_sql1':'mysql+pymysql://prople:prople@222.27.227.131:3306/people_count'
+# }
 
 # APP_THEME = "bootstrap-theme.css"  # default bootstrap
 # APP_THEME = "cerulean.css"

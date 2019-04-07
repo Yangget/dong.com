@@ -4,7 +4,7 @@ from flask_appbuilder import ModelView
 from app import appbuilder, db
 
 
-from flask_appbuilder import AppBuilder, expose, BaseView
+from flask_appbuilder import AppBuilder, expose, BaseView,IndexView
 """
     Create your Views::
 
@@ -29,31 +29,6 @@ from flask_appbuilder import AppBuilder, expose, BaseView
 def page_not_found(e):
     return render_template('404.html', base_template=appbuilder.base_template, appbuilder=appbuilder), 404
 
-
-
-
-"""
-# flask_appbuilder.baseviews.expose（url ='/'，methods =（'GET'，））
-# 这些方法将会是公开的
-class MyView(BaseView):
-    route_base = "/myview"
-
-    @expose('/method1/<string:param1>')
-    def method1(self, param1):
-        # do something with param1
-        # and return it
-        return param1
-
-    @expose('/method2/<string:param1>')
-    def method2(self, param1):
-        # do something with param1
-        # and render it
-        param1 = 'Hello %s' % (param1)
-        return param1
-
-appbuilder.add_view_no_menu(MyView())
-"""
-
 # flask_appbuilder.security.decorators.has_access（f ）
 # 使用此装饰器为您的方法启用粒度安全权限。权限将与角色相关联，角色与用户相关联
 from flask_appbuilder import has_access
@@ -65,23 +40,18 @@ class MyView(BaseView):
     @expose('/method1/')
     @has_access
     def method1(self):
-        return render_template("appbuilder/layout.html")
+        return self.render_template("404.html")
 
-    @expose('/method2/<string:param1>')
+    @expose('/method2/')
     @has_access
-    def method2(self, param1):
-        # do something with param1
-        # and render template with param
-        param1 = 'Goodbye %s' % (param1)
-        return param1
+    def method2(self):
+        return self.render_template("404.html")
 
     @expose('/method3/<string:param1>')
     @has_access
     def method3(self, param1):
-        # do something with param1
-        # and render template with param
         param1 = 'Goodbye %s' % (param1)
-        return self.render_template('method3.html',
+        return self.render_template('404.html',
                                param1=param1)
 
 
@@ -93,3 +63,24 @@ appbuilder.add_link("Method2", href='/myview/method2/jonh', category='My View')
 # 因此您必须创建自己的模板。在项目的目录和app文件夹下，创建一个名为“templates”的文件夹。
 # 如在里面创建一个文件名'method3.html'
 appbuilder.add_link("Method3", href='/myview/method3/jonh', category='My View')
+
+# class IndexView(BaseView):
+#
+#     route_base = ''
+#     default_view = 'index'
+#     index_template = 'appbuilder/index.html'
+#     base_permissions = ['can_list','can_show']
+#
+#     @expose('/')
+#     @has_access
+#     def index(self):
+#         self.update_redirect()
+#         return self.render_template(self.index_template,
+#                                     appbuilder=self.appbuilder)
+#
+#     # @expose('/volume/<input_volume>/')
+#     # # @has_access
+#     # def show(volumes):
+#     #     volumes = {}
+#     #     print(volumes)
+#     #     return volumes

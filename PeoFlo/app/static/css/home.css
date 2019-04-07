@@ -8,8 +8,8 @@ body {
 
 h2, h3 {
     letter-spacing: 0.25em;
-    /*text-transform: uppercase;*/
-    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 p {

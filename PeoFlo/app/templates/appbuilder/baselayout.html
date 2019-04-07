@@ -1,10 +1,13 @@
 {% extends 'appbuilder/init.html' %}
 {% import 'appbuilder/baselib.html' as baselib %}
 
+<body>
 {% block body %}
 {#顶部标签栏#}
+
     {% include 'appbuilder/general/confirm.html' %}
     {% include 'appbuilder/general/alert.html' %}
+
 
     {% block navbar %}
 {#中间部分#}
@@ -17,6 +20,7 @@
     <div class="container">
       <div class="row">
           {% block messages %}
+
             {% include 'appbuilder/flash.html' %}
           {% endblock %}
           {% block content %}
@@ -34,4 +38,4 @@
         </footer>
     {% endblock %}
 {% endblock %}
-
+</body>

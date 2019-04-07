@@ -17,10 +17,11 @@
 
 
 .fixed-footer{
-	background: orange;
-	position: absolute;
-    bottom: 0;
-    height: 50px;
+	position: relative;
+    margin-top: -60px; /*等于footer的高度*/
+    height: 60px;
+    clear:both;
+    background: #c6f;
 }
 
 
