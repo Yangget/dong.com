@@ -6,25 +6,23 @@
  @File    : index.py
 """
 from flask_appbuilder import BaseView, expose, has_access
+from flask_appbuilder import IndexView
 
 
-class IndexView(BaseView):
+class MyIndexView(IndexView):
 
-    route_base = ''
-    default_view = 'index'
-    index_template = 'appbuilder/index.html'
-    base_permissions = ['can_list','can_show']
 
-    @expose('/')
+    # def index(self):
+    #     self.update_redirect( )
+    #     return self.render_template( self.index_template , appbuilder=self.appbuilder )
+
+    index_template = 'index.html'
+    @expose( "/" , methods=['POST', 'GET'])
     @has_access
-    def index(self):
-        self.update_redirect()
-        return self.render_template(self.index_template,
-                                    appbuilder=self.appbuilder)
+    def index(self) :
+        self.update_redirect( )
+        return self.render_template( self.index_template , appbuilder=self.appbuilder )
 
-    # @expose('/volume/<input_volume>/')
-    # # @has_access
-    # def show(volumes):
-    #     volumes = {}
-    #     print(volumes)
-    #     return volumes
+
+
+

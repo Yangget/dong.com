@@ -85,7 +85,7 @@ p {
  */
  .pricing-tables,
  .information {
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
  }
 .pricing-tables {
@@ -176,9 +176,9 @@ p {
  * Styles for the individual list elements within each pricing table
  */
 .pricing-table-list li {
-    padding: 0.8em 0;
+    padding: 0.9em 0;
     background: #f7f7f7;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 0px solid #e7e7e7;
 }
 
 

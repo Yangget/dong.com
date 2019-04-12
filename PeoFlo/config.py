@@ -15,7 +15,7 @@ OPENID_PROVIDERS = [
 # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://prople:prople@222.27.227.131:3306/people_count'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://scott:tiger@localhost:5432/myapp'
-#SQLALCHEMY_ECHO = True
+# SQLALCHEMY_ECHO = True
 SQLALCHEMY_POOL_RECYCLE = 3
 
 BABEL_DEFAULT_LOCALE = 'en'
@@ -51,6 +51,8 @@ APP_NAME = "People Flow Count"
 # #     # 'my_sql1':'mysql://root:password@localhost/quickhowto',
 #     'my_sql1':'mysql+pymysql://prople:prople@222.27.227.131:3306/people_count'
 # }
+
+FAB_API_SWAGGER_UI = True
 
 # APP_THEME = "bootstrap-theme.css"  # default bootstrap
 # APP_THEME = "cerulean.css"
