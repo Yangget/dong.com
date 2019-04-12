@@ -1,0 +1,51 @@
+
+.collapse.in {
+    display:block;
+	overflow: visible;
+}
+
+.panel-group .panel {
+    overflow: visible;
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+.fixed-footer{
+	position: relative;
+    margin-top: -60px; /*等于footer的高度*/
+    height: 60px;
+    clear:both;
+    background: #c6f;
+}
+
+
+th.action_checkboxes {
+    width: 1%;
+}
+
+.cursor-hand {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.img-select {
+    outline: 2px solid;
+}
+
+.img-unselect {
+    outline: 1px solid;
+}
+
+.fa-black {
+    color: black;
+}
+
+.btn.filter {
+    text-align: left;
+}
